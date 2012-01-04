@@ -37,10 +37,11 @@ var AccessibleButton = new Class({
 			this.pressed = false;
 			this.options.button.addEvent('click', function() {
 				if(this.pressed) {
-					console.log('released');
+					this.options.button.removeClass('pressed');
 					this.pressed = false;
 					this.options.clickFunction();
 				} else {
+					this.options.button.addClass('pressed');
 					this.pressed = true;
 					this.options.releaseFunction();
 				}

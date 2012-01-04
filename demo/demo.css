@@ -94,6 +94,7 @@ div.sa_demo_headerScreen {
 	background-position: center center;
 	background-color: #efefef;
 }
+
 .button:hover {
 	background-color: #ffffff;
 }
@@ -102,4 +103,7 @@ div.sa_demo_headerScreen {
 	background-color: #ffffff;
 	border: 2px dotted #cc0000;
 	margin: -1px;
+}
+.button.pressed{
+	background-color: #eeeeff;
 }

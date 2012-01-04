@@ -8,11 +8,10 @@ window.addEvent('domready', function() {
 		'ariaDescription' : 'MooAccessToggleButtonDescription',
 		'toggle' : true,
 		'clickFunction' : function(e) {
-			var live = $('buttonLive');
-			live.setHTML('Button pressed.')
+			$('buttonLive').set('html','Button pressed.')
 		},
 		'releaseFunction' : function(e) {
-			$('buttonLive').setHTML('Button released.')
+			$('buttonLive').set('html','Button released.')
 		}
 	})
 });
