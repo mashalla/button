@@ -34,16 +34,20 @@ var AccessibleButton = new Class({
 			this.options.button.setProperty('aria-describedby', this.options.ariaDescription)
 		}
 		if(this.options.toggle) {
+			this.options.button.setProperty('aria-pressed', 'false');
 			this.pressed = false;
 			this.options.button.addEvent('click', function() {
 				if(this.pressed) {
+					this.options.button.setProperty('aria-pressed', 'false');
 					this.options.button.removeClass('pressed');
 					this.pressed = false;
-					this.options.clickFunction();
+					this.options.releaseFunction();
 				} else {
+
+					this.options.button.setProperty('aria-pressed', 'true');
 					this.options.button.addClass('pressed');
 					this.pressed = true;
-					this.options.releaseFunction();
+					this.options.clickFunction();
 				}
 			}.bind(this));
 		}
