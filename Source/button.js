@@ -1,15 +1,15 @@
 /*
- ---
- script: button.js
- description: ---
- license: MIT-style license
- authors:
- - Christian Merz
- requires:
- - core:1.4/Element.Event
- provides: [dialogCME]
- ...
- */
+---
+script: button.js
+description: ---
+license: MIT-style license
+authors:
+- Christian Merz
+requires:
+- core:1.4/Element.Event
+provides: [AccessibleButton]
+...
+*/
 
 var AccessibleButton = new Class({
 	Implements : [Options, Events],

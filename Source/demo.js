@@ -1,3 +1,15 @@
+/*
+---
+script: button.js
+description: ---
+license: MIT-style license
+authors:
+- Christian Merz
+requires:
+- core:1.4/Element.Event
+provides: [AccessibleButton]
+...
+*/
 window.addEvent('domready', function() {
 	var mooAccessButton = new AccessibleButton({
 		'button' : $('MooAccessButton'),
