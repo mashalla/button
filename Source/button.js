@@ -29,7 +29,7 @@ var AccessibleButton = new Class({
 		if(!this.options.button)
 			return;
 
-		this.options.button.setProperty('role', this.options.button);
+		this.options.button.setProperty('role', 'button');
 		if(this.options.ariaDescription) {
 			this.options.button.setProperty('aria-describedby', this.options.ariaDescription)
 		}
